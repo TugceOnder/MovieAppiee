@@ -8,7 +8,7 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Commands.MovieCommands
 {
     public class UpdateMovieCommand
     {
-        public int MovieId { get; set; }
+        public string MovieId { get; set; }
         public string Title { get; set; }
         public string CoverImageUrl { get; set; }
         public decimal Rating { get; set; }
