@@ -29,7 +29,7 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.MovieHandlers
             value.CoverImageUrl= command.CoverImageUrl;
             value.CreatedYear = command.CreatedYear;
             value.ReleaseDate = command.ReleaseDate;
-            await _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
     
