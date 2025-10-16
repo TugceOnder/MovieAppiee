@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace MovieApi.Application.Features.MediatorDesignPattern.Queries.TagQueries
 {
-    public class GetTagByIdQueryResult:IRequest<GetTagByIdQueryResult>
+    public class GetTagByIdQuery : IRequest<GetTagByIdQueryResult>
     {
-        public GetTagByIdQueryResult(int tagId)
+        public int TagId { get; set; }
+
+        public GetTagByIdQuery(int tagId)
         {
             TagId = tagId;
         }
-
-        public int TagId { get; set; }
     }
 }

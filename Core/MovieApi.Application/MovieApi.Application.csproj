@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\MediatorDesignPattern\Handlers\" />
+    <Folder Include="Features\CQRSDesignPattern\Handlers\UserRegisterHandlers\" />
   </ItemGroup>
 
 </Project>
