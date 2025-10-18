@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace MovieApi.Application.Features.MediatorDesignPattern.Handlers.CastHandlers
 {
-    public class CreateCastCommandHandler : IRequestHandler<CreateCastCommand>
+    public class CreateCastCommandHandler : IRequestHandler<CreateCastCommands>
     {
         private readonly MovieContext _context;
         public CreateCastCommandHandler(MovieContext context)
         {
             _context = context;
         }
-        public async Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
+        public async Task Handle(CreateCastCommands request, CancellationToken cancellationToken)
         {
             await _context.Casts.AddAsync(new Cast
             {
